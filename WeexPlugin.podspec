@@ -7,6 +7,8 @@ Pod::Spec.new do |s|
 
   s.description  = <<-DESC
                    Weex plugin 
+                   DESC
+
   s.homepage     = "https://github.com/kfeagle/WeexPlugin.git"
   s.license = {
     :type => 'Copyright',
@@ -15,22 +17,17 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.authors      = {
-                     "kfeagle" =>"sunjjbobo@163.com"
+                     "kfeagle" =>"songhaibohust@gmail.com"
                    }
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git', :tag => '0.0.3' }
-  s.source_files  = "ios/Sources/**/*.{h,m,mm}"
-  # s.exclude_files = "Classes/Exclude"
+  s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git', :tag => '0.0.1' }
+  s.source_files  = "WeexPlugin/**/*.{h,m,mm}"
   
 
   s.requires_arc = true
 
-  #s.dependency "WeexSDK"
-
-  # s.vendored_frameworks = 'Weexplugin.framework'
-
-  # s.user_target_xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => "'$(PODS_ROOT)/Weexplugin'" }
+  s.dependency "WeexSDK"
 
 end

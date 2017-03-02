@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "WeexPlugin"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Weex Plugin"
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
 
-  s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git', :tag => '0.0.3' }
+  s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git', :tag => '0.0.4' }
   s.source_files  = "WeexPlugin/**/*.{h,m,mm}"
   
   s.requires_arc = true

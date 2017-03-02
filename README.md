@@ -22,7 +22,7 @@ This library provides auto register function for Weex component module adapter o
 ### Podfile
 ```
 platform :ios, '7.0'
-pod 'WeexPlugin', '~>0.0.3'
+pod 'WeexPlugin', '~>0.0.4'
 ```
 ### Build Project
 

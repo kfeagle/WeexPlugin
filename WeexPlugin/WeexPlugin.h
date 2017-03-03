@@ -17,6 +17,6 @@
 + (void)load { [WXSDKEngine registerComponent:js_name withClass:[self class]]; }
 
 #define WX_PlUGIN_EXPORT_HANDLER(js_impl,js_protocol) \
-+ (void)load { [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)]; }
++ (void)load { [WXSDKEngine registerHandler:[js_impl new] withProtocol:@protocol(js_protocol)]; }
 
 #endif

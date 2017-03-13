@@ -15,6 +15,10 @@
 		C453D1471E6EAF2900FD95CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C453D1461E6EAF2900FD95CC /* Assets.xcassets */; };
 		C453D14A1E6EAF2900FD95CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453D1481E6EAF2900FD95CC /* LaunchScreen.storyboard */; };
 		C453D1591E6EB56100FD95CC /* WPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C453D1581E6EB56100FD95CC /* WPTest.m */; };
+		C4E952781E76FCB500CFB5B7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E952771E76FCB500CFB5B7 /* libc++.tbd */; };
+		C4E9527A1E76FCC100CFB5B7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E952791E76FCC100CFB5B7 /* libsqlite3.tbd */; };
+		C4E9527D1E7704C100CFB5B7 /* WXActionSheetModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9527C1E7704C100CFB5B7 /* WXActionSheetModule.m */; };
+		C4E952801E7704CD00CFB5B7 /* WXActionSheetCompnonent.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9527F1E7704CD00CFB5B7 /* WXActionSheetCompnonent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		C453D14B1E6EAF2900FD95CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C453D1571E6EB56100FD95CC /* WPTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTest.h; sourceTree = "<group>"; };
 		C453D1581E6EB56100FD95CC /* WPTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTest.m; sourceTree = "<group>"; };
+		C4E952771E76FCB500CFB5B7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C4E952791E76FCC100CFB5B7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C4E9527B1E7704C100CFB5B7 /* WXActionSheetModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXActionSheetModule.h; sourceTree = "<group>"; };
+		C4E9527C1E7704C100CFB5B7 /* WXActionSheetModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXActionSheetModule.m; sourceTree = "<group>"; };
+		C4E9527E1E7704CD00CFB5B7 /* WXActionSheetCompnonent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXActionSheetCompnonent.h; sourceTree = "<group>"; };
+		C4E9527F1E7704CD00CFB5B7 /* WXActionSheetCompnonent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXActionSheetCompnonent.m; sourceTree = "<group>"; };
 		E27D50918D96F2101D58396B /* Pods-WeexPluginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexPluginDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexPluginDemo/Pods-WeexPluginDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E9527A1E76FCC100CFB5B7 /* libsqlite3.tbd in Frameworks */,
+				C4E952781E76FCB500CFB5B7 /* libc++.tbd in Frameworks */,
 				0D3B40DFCD9B8F3648EE9A3E /* libPods-WeexPluginDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +71,8 @@
 		B2E1C11034F3DB35D248D2E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4E952791E76FCC100CFB5B7 /* libsqlite3.tbd */,
+				C4E952771E76FCB500CFB5B7 /* libc++.tbd */,
 				8A26E9F4AFDE13481E55F46D /* libPods-WeexPluginDemo.a */,
 			);
 			name = Frameworks;
@@ -96,6 +110,10 @@
 				C453D13A1E6EAF2900FD95CC /* Supporting Files */,
 				C453D1571E6EB56100FD95CC /* WPTest.h */,
 				C453D1581E6EB56100FD95CC /* WPTest.m */,
+				C4E9527B1E7704C100CFB5B7 /* WXActionSheetModule.h */,
+				C4E9527C1E7704C100CFB5B7 /* WXActionSheetModule.m */,
+				C4E9527E1E7704CD00CFB5B7 /* WXActionSheetCompnonent.h */,
+				C4E9527F1E7704CD00CFB5B7 /* WXActionSheetCompnonent.m */,
 			);
 			path = WeexPluginDemo;
 			sourceTree = "<group>";
@@ -262,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E9527D1E7704C100CFB5B7 /* WXActionSheetModule.m in Sources */,
 				C453D1421E6EAF2900FD95CC /* ViewController.m in Sources */,
 				C453D13F1E6EAF2900FD95CC /* AppDelegate.m in Sources */,
+				C4E952801E7704CD00CFB5B7 /* WXActionSheetCompnonent.m in Sources */,
 				C453D13C1E6EAF2900FD95CC /* main.m in Sources */,
 				C453D1591E6EB56100FD95CC /* WPTest.m in Sources */,
 			);
@@ -391,35 +411,20 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/",
 					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"${PODS_ROOT}/Headers/Public/WeexSDK\"",
 				);
 				INFOPLIST_FILE = WeexPluginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/WeexSDK\"",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-ObjC",
-					"-l\"SocketRocket\"",
-					"-l\"WeexPlugin\"",
-					"-l\"icucore\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AVKit\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"GLKit\"",
-					"-framework",
-					"\"JavaScriptCore\"",
-					"-framework",
-					"\"MediaPlayer\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"WeexSDK\"",
-					"-lc++",
+					"-licucore",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexPluginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,35 +443,21 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/",
 					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"${PODS_ROOT}/Headers/Public/WeexSDK\"",
 				);
 				INFOPLIST_FILE = WeexPluginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SocketRocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/WeexSDK\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-ObjC",
-					"-l\"SocketRocket\"",
-					"-l\"WeexPlugin\"",
-					"-l\"icucore\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AVKit\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"GLKit\"",
-					"-framework",
-					"\"JavaScriptCore\"",
-					"-framework",
-					"\"MediaPlayer\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"WeexSDK\"",
-					"-lc++",
+					"-licucore",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexPluginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

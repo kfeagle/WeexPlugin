@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <WeexPlugin/WeexPlugin.h>
-#import <WeexPlugin/WPRegister.h>
+#import "WPRegister.h"
 
 
 @interface AppDelegate ()
@@ -19,7 +18,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [WPRegister registerPlugins];
     
     return YES;
 }

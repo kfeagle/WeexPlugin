@@ -1,6 +1,0 @@
-framework module WeexPlugin {
-  umbrella header "WeexPlugin.h"
-
-  export *
-  module * { export * }
-}

@@ -1,2 +1,5 @@
+*.xcworkspace
+Pods/
+podfile.lock
 WeexPlugin.xcodeproj/xcuserdata/
 WeexPlugin.xcodeproj/project.xcworkspace/xcuserdata/

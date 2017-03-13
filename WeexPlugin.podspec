@@ -23,7 +23,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.0"
   s.source =  { :path => '.' }
   #s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git', :tag => '0.0.5' }
-  s.source_files  = "Sources/**/*.{h,m,mm}"
+  s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git' }
+  #s.source_files  = "Sources/**/*.{h,m,mm}"
+  s.ios.preserve_paths      = 'WeexPlugin.framework'
+  s.ios.public_header_files  = 'WeexPlugin.framework/Headers/*.h'
+  s.ios.vendored_frameworks  = 'WeexPlugin.framework'
   s.dependency "WeexSDK"
   s.requires_arc = true
 

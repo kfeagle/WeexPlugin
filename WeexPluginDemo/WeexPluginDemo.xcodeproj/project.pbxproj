@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3B40DFCD9B8F3648EE9A3E /* libPods-WeexPluginDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A26E9F4AFDE13481E55F46D /* libPods-WeexPluginDemo.a */; };
 		C453D13C1E6EAF2900FD95CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C453D13B1E6EAF2900FD95CC /* main.m */; };
 		C453D13F1E6EAF2900FD95CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C453D13E1E6EAF2900FD95CC /* AppDelegate.m */; };
 		C453D1421E6EAF2900FD95CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C453D1411E6EAF2900FD95CC /* ViewController.m */; };
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3B40DFCD9B8F3648EE9A3E /* libPods-WeexPluginDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

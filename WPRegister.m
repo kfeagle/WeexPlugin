@@ -27,6 +27,7 @@
 [WXSDKEngine registerHandler:[NSClassFromString(js_impl) new] withProtocol:NSProtocolFromString(js_protocol_name)];
 
 
+
 static NSArray<Class>* readConfigurations(){
 //    static NSMutableArray<Class> *classes;
     static NSMutableArray *configs;
@@ -65,14 +66,19 @@ static NSArray<Class>* readConfigurations(){
 
 @implementation WPRegister
 
-+(void)registerPlugins
++(void)load
+{
+    [self registerPlugins];
+}
+
++(void )registerPlugins
 {
     NSArray *array = readConfigurations();
     if (array && [array count]>0) {
         for (NSString *str in array) {
             NSArray<NSString*> *components = [str componentsSeparatedByString:@"&"];
             if (!components || [components count] == 0) {
-                return;
+                return ;
             }
             if ([components count] < 3){
                 continue;
@@ -84,12 +90,15 @@ static NSArray<Class>* readConfigurations(){
                 if ([type length]>0&&[name length]>0 && [className length]>0 ) {
                     if([type isEqualToString:@"module"] && NSClassFromString(className)) {
                         WX_PlUGIN_REGISTER_MODULE(name,className);
+                        NSLog(@"%@ register success",className);
                     }
                     if([type isEqualToString:@"component"] && NSClassFromString(className)) {
                         WX_PlUGIN_REGISTER_COMPONENT(name,className);
+                        NSLog(@"%@ register success",className);
                     }
                     if([type isEqualToString:@"protocol"]) {
                         WX_PlUGIN_REGISTER_HANDLER(name,className);
+                        NSLog(@"%@ register success",className);
                     }
                 }
             }

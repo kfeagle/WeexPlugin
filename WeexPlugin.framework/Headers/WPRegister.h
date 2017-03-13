@@ -10,6 +10,4 @@
 
 @interface WPRegister : NSObject
 
-+(void)registerPlugins;
-
 @end

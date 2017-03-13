@@ -90,15 +90,15 @@ static NSArray<Class>* readConfigurations(){
                 if ([type length]>0&&[name length]>0 && [className length]>0 ) {
                     if([type isEqualToString:@"module"] && NSClassFromString(className)) {
                         WX_PlUGIN_REGISTER_MODULE(name,className);
-                        NSLog(@"%@ register success",className);
+                        NSLog(@"%@ register",className);
                     }
                     if([type isEqualToString:@"component"] && NSClassFromString(className)) {
                         WX_PlUGIN_REGISTER_COMPONENT(name,className);
-                        NSLog(@"%@ register success",className);
+                        NSLog(@"%@ register",className);
                     }
                     if([type isEqualToString:@"protocol"]) {
                         WX_PlUGIN_REGISTER_HANDLER(name,className);
-                        NSLog(@"%@ register success",className);
+                        NSLog(@"%@ register",className);
                     }
                 }
             }

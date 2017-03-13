@@ -1,12 +1,12 @@
-ali_source 'alibaba-specs' #集团内部仓库
-ali_source 'alibaba-specs-mirror' #官方镜像仓库
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 #inhibit_all_warnings!
 
 def common
-    pod 'WeexSDK',  '0.10.1.1'
+    pod 'WeexSDK'
     #pod 'WeexPlugin'
     pod 'WeexPlugin', :path=>'../'
+    pod 'SocketRocket', '0.4.2'
 end
 
 target 'WeexPluginDemo' do

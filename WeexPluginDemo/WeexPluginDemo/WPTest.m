@@ -9,7 +9,7 @@
 #import "WPTest.h"
 #import <WeexPlugin/WeexPlugin.h>
 
-WX_PlUGIN_EXPORT_MODULE(actionSheet,WXActionSheetModule)
+WX_PlUGIN_EXPORT_HANDLER(WXImgLoaderDefaultImpl,WXImgLoaderProtocol)
 
 @implementation WPTest
 

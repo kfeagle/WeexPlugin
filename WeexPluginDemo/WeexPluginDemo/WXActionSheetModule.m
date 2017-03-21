@@ -11,6 +11,5 @@
 
 @implementation WXActionSheetModule
 
-WX_PlUGIN_EXPORT_COMPONENT(actionSheet,WXActionSheetCompnonent)
-
+WX_PlUGIN_EXPORT_MODULE(actionSheet,WXActionSheetModule)
 @end

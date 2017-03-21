@@ -10,4 +10,6 @@
 
 @implementation WXActionSheetModule
 
+WX_PlUGIN_EXPORT_COMPONENT(actionSheet,WXActionSheetCompnonent)
+
 @end

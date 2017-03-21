@@ -10,4 +10,6 @@
 
 @implementation WXActionSheetCompnonent
 
+WX_PlUGIN_EXPORT_HANDLER(WXImgLoaderDefaultImpl,WXImgLoaderProtocol)
+
 @end

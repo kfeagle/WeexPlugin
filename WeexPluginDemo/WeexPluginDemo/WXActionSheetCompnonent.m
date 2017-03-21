@@ -7,6 +7,7 @@
 //
 
 #import "WXActionSheetCompnonent.h"
+#import <WeexPlugin/WeexPlugin.h>
 
 @implementation WXActionSheetCompnonent
 

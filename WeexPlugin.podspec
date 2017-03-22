@@ -24,7 +24,6 @@ Pod::Spec.new do |s|
   #s.source =  { :path => '.' }
   s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git', :tag => '0.0.6' }
   #s.source       = { :git => 'https://github.com/kfeagle/WeexPlugin.git' }
-  s.source_files  = "WeexPlugin.framework/Headers/*.{h,m,mm}"
   s.ios.preserve_paths      = 'WeexPlugin.framework'
   s.ios.public_header_files  = 'WeexPlugin.framework/Headers/*.h'
   s.ios.vendored_frameworks  = 'WeexPlugin.framework'

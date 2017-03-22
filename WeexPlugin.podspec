@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
   s.ios.preserve_paths      = 'WeexPlugin.framework'
   s.ios.public_header_files  = 'WeexPlugin.framework/Headers/*.h'
   s.ios.vendored_frameworks  = 'WeexPlugin.framework'
-  s.dependency "WeexSDK"
   s.requires_arc = true
   s.dependency 'SocketRocket'
   s.libraries = "stdc++"
